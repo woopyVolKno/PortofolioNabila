@@ -1,0 +1,146 @@
+/* impor font */
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
+/* mengubah semua font jika dari atas */
+*{
+        font-family: 'Cherry Bomb One', cursive;
+        color: brown;
+        margin: 0;
+    }
+
+.background-container {
+    width: 100%;
+    height: 200px;
+
+    /* mengubah warna latar belakang */
+    background-color: aquamarine;
+}
+
+/* belajar mengubah latar belakang gambar */
+.background-image-container {
+    width: 100%;
+    height: 100vh;
+
+    /* buat ngatur gambarnya */
+    background-image: url(../img/jwoo.jpg);
+
+    /* buat ngetur ukuran gambar */
+    background-size: contain;
+    background-size: cover;
+
+    /* buat ngatur agar gambar tidak berulang*/
+    background-repeat: no-repeat;
+}
+
+.border-kotak {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 2rem;
+
+    /* 
+    boder,
+    lebar garis, tipe, warna
+    */
+    border: 1px solid blue;
+    /* border: 1px dashed blue; */
+    /* border: 1px dotted blue; */
+}
+
+.caption {
+    /* mengatur font */
+    font-family: 'Cherry Bomb One', cursive;
+    /* mengatur ketebalan warna */
+    font-weight: 800;
+    /* mengatur ukuran text */
+    font-size: 32px;
+    /* mengaturkecil/besar text */
+    font-variant: small-caps;
+}
+
+.kotak-margin-1,
+.kotak-margin-2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.kotak-margin-1 {
+    /* memberikan margin di setiap sisi*/
+    margin: 1rem;
+}
+
+.kotak-margin-2 {
+    /* mengatur jarak element atas*/
+    margin-top: 1rem;
+    /* mengatur jarak element bawah */
+    margin-bottom: 1rem;
+    /* mengatur jarak element kiri */
+    margin-left: 1rem;
+    /* mengatur jarak element kanan */
+    margin-right: 1rem;
+}
+
+.kotak-padding {
+    background-color: black;
+    color: white;
+    width: fit-content;
+    border-radius: 12px;
+
+    /* digunakan untuk menghasilkan ruang kosong
+    disekitar konten elemen yang ada didalam*/
+    padding: left;
+    padding: 1rem;
+
+    /* mengatur  atas*/
+    padding: 1rem;
+    /* mengatur  bawah */
+    padding-bottom: 1rem;
+    /* mengatur  kiri */
+    padding-left: 1rem;
+    /* mengatur  kanan */
+    padding-right: 1rem;
+
+    /* mengaturkemunculan dari element */
+    display: block;
+}
+
+.kotak-padding img {
+    width: 100px;
+}
+
+.text-properety {
+    /* mengubah warna text */
+    color: blue;
+    /* mengatur posisi text */
+    text-align: center;
+    /* memberikan garis bawah pada text*/
+    text-decoration: underline;
+}
+
+.kotak-absolute {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    /* element bebas berada dimana saja */
+    position: absolute;
+    top: 20px;
+    right: 50%;
+}
+
+nav {
+    /* element tidak ikut ter scroll */
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 1rem;
+    list-style-type: none;
+}

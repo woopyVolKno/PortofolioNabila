@@ -1,0 +1,62 @@
+.btn {
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    /* supaya cursor berubah menjadi telunjuk */
+    cursor: pointer;
+}
+
+/* saat cursor diarahkan maka akan akan berubah stylenya */
+.btn:hover {
+    background-color: aquamarine;
+    color: white;
+}
+
+/* saat cursor di click berubah stylenya */
+.btn:active {
+    background-color: red;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+table td,
+table th {
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+/*  memberikan style pada element yang sama,
+    2n menggambarkan 2 baris ganti style */
+
+/* table tr:nth-child(2n) */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* memberikan style pada element pertama */
+table tr:first-child {
+    background-color: red;
+}
+
+/* memberikan style pada element terakhir */
+table tr:last-child {
+    background-color: blue;
+}
+
+/* mengubah huruf pertama */
+p::first-letter {
+    font-size: 2rem;
+    color: red;
+}
+
+/* mengubah satu baris */
+p::first-line {
+    font-size: 2rem;
+    color: red;
+}

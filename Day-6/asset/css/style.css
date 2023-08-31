@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    padding: 30px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+/* untuk tampilan mobile */
+@media (max-width : 480px) {
+    .banner {
+        background-color: blue;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* tampilan tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+    .banner {
+        background-color: green;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
+
+/* tampilan tablet landscape */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner {
+        background-color: yellow;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+}
+
+.kotak-besar {
+    padding: 1rem;
+    background-color: pink;
+
+    /* membuat element manjadi berjajar */
+    display: flex;
+
+    /* mengatur posisi dari child element */
+    /* justify-content: space-between; */
+    justify-content: center;
+    /* flex-direction: column; */
+    
+    /* memberi jarak element */
+    gap: 20px;
+}
+
+.kotak-kecil {
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+    .kotak-besar {
+        /* mengatur arah pembungkus, horizontal/vertical */
+        flex-direction: column;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}

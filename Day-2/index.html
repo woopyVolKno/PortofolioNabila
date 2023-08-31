@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- tag a berfungsi untuk berpindah dari hal 1 ke hal lain,
+    href berfungsi untuk menuntukan hal yang akan dituju
+    target berfungsi untuk menentukan bagaimana hal akan dibuka -->
+    <a href="halaman2.html">
+        Pindah Halaman 2
+    </a>
+    <br>
+    <a href="https://instagram.com/woopynna?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
+        Instagram
+    </a>
+    <br>
+    <a href="https://instagram.com/woopynna?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
+        Instagram
+    </a>
+    <br>
+    <a href="https://instagram.com/woopynna?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">
+        <img src="img/favicon-dilesin.png" width="50">
+    </a>
+
+    <!-- center berfungsi untuk membuat element berada di tengah -->
+    <center>
+        <img src="img/woopy truz.jpg" alt="gambar" width="200">
+        <h1>Ini Woopy</h1>
+    </center>
+    
+    <!-- table berfungsi untuk membuat tabel
+    tr berfungsi untuk membuat beris
+    th berfungsi untuk membuat harder
+    td berfungsi untuk membuat kolom
+    border berfungsi untuk memberikan garis pada table
+    width berfungsi untuk memberikan lebar pada table
+    colspan berfungsi untuk menggabungkan kolom
+    align berufungsi untuk mengatur posisi -->
+    <table border="1" width="100%">
+        <tr>
+            <th align="left">
+                No
+            </th>
+            <th align="center">
+                Nama
+            </th>
+            <th align="right">
+                Kelas
+            </th>
+            <th colspan="3">
+                Kehadiran
+            </th>
+        </tr>
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                Nabila
+            </td>
+            <td>
+                XI PPLG 2
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+        </tr>
+    </table>
+
+    <h1> BELAJAR FORM</h1>
+
+    <!--form berfungsi untuk membuat form,
+        label berfungsi untuk membuat label,
+        input berfungsi untuk membuat inputan,
+        type berfungsi untuk memnentukan tipe inputan,
+        name berfungsi untuk memberikan nama pada inputan,
+        placeholder berfungsi untuk memberikan placeholder pada inputan,
+        id berfungsi untuk memberikan id pada inputan,
+        onclick berfungsi untuk menjelaskan fungsi ketika klik,  -->
+
+    <form method="GET">
+        <label for="">Nama</label>
+        <br>
+        <input type="text" name="nama" placeholder="Masukkan nama anda">
+
+        <br>
+        <label for="">Email</label>
+        <br>
+        <input type="email" email="email" placeholder="Masukkan email anda">
+
+        <br>
+        <label for="">Password</label>
+        <br>
+        <input type="password" password="password" placeholder="Masukkan password anda" id="password">
+        <br>
+        <input type="checkbox" onclick="show()">
+        <label>Tampilan Password</label>
+
+        <br>
+        <label for="">Tanggal Lahir</label>
+        <br>
+        <input type="date">
+
+        <br>
+        <label for="">Jenis kelamin</label>
+        <br>
+        <select name="" id="">
+            <option value="">laki-laki</option>
+            <option value="">perempuan</option>
+            <option value="">lainnya</option>
+        </select>
+
+        <br>
+        <label for="">Alamat</label>
+        <br>
+        <textarea name="" id="" cols="50" rows="20"></textarea>
+
+        <br>
+        <label for="">foto diri</label>
+        <br>
+        <input type="file">
+
+        <br>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </form>
+
+    <script>
+        function show() {
+            var input = document.getElementById("password");
+            if (input.type === "password") {
+                input.type = "text";
+            } else {
+                input.type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>

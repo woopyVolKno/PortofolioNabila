@@ -1,0 +1,85 @@
+body {
+    background-color: pink;
+}
+
+/* contoh selector tag */
+h1 {
+    color: white;
+}
+
+p {
+    color: red;
+}
+
+/* contoh selector class */
+.heading-text-1 {
+    color: yellow;
+}
+
+/* penggabungan style */
+.heading-text-1,
+.heading-text-2 {
+    color: pink;
+}
+
+/* contoh selector id
+id bersifat unik, tidak boleh ada yang sama */
+#gambar-woopy {
+    width: 100%;
+}
+
+/* padding itu garis luar */
+.container-article {
+    background-color: white;
+    /* width : fit-content */
+    /*padding memberi garis tepi */
+    padding: 1rem;
+    /* padding-left: 1 ren */
+    /* padding-top: 1rem; */
+    /* padding-bottom: 1rem; */
+    /* memberikan garis lengkung pada elemnt */
+    border-radius: 12px;
+    /* text-align center mencenterkan element */
+    text-align: center;
+    /* margin berfungsi memberikan jarak antar element */
+    margin-top: 2rem;
+    display: none;
+
+}
+
+.text-caption {
+    /* mengubah ukuran font */
+    font-size: 20px;
+    /* mengubah ketebalan font */
+    font-weight: 1000;
+    /* mengubah tipe font */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* mengatur font jadi huruf kapital ato ngga*/
+    font-variant: small-caps;
+    color: green;
+    /* ltr dan rtl digunakan untuk teks bahasa arab */
+    /* direction: rtl; */
+    /* direction: rtl; */
+    text-decoration: underline;
+    /* word spacing mengatur jarak antar kata */
+    word-spacing: 50px;
+}
+
+.rectangle {
+    width: 100px;
+    height: 100px;
+    background-color: lightcyan;
+}
+
+.container-flex {
+    margin-top: 2rem;
+    /* display flex berfungsi untuk membuat konten menjadi flexible */
+    display: flex;
+    /* mengatur posisi konten terdapat jarak */
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    /* justify-content: end; */
+
+    /* gap untuk memberikan jarak antar element */
+    gap: 20px;
+}
